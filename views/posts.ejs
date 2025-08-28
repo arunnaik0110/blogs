@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All posts</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/public/functionality.js">
+</head>
+<body>
+
+    <div class="nav-bar">
+        <h2>Personal Blog</h2>
+    </div>
+    
+
+  <% for(post of posts){%>
+        <div class="posts">
+            <p>Post id: <%=post.id%></p>
+             <h5 class="username">@<%=post.username%></h5>
+             <p class="content">"<%=post.quote%>"</p>
+             <div class="buton">
+                  <a href="http://localhost:8080/post/<%=post.id%>"><button>view in detail</button></a>
+                  <a href="http://localhost:8080/post/<%=post.id%>/edit"><button>Edit</button></a>
+
+
+             
+
+              <form method="post" action="/post/<%=post.id%>?_method=DELETE">
+              <button>delete</button>
+              </form>
+             </div>
+           
+       </div>
+ <%}%>
+ <br>
+   <a href="http://localhost:8080/post/new"> <button> Create</button> </a> 
+    <script lin></script>
+</body>
+</html>

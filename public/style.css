@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+   margin-top: 0;
+   font-weight: 300px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+.posts{
+    background-color: cornflowerblue;
+    color: black;
+     padding: 2px;
+}
+h2{
+    color: #000;
+    font-style: oblique;
+    justify-self: center;
+    align-items: center;
+}
+
+button{
+    background-color: orange;
+    border-radius: 10px;
+height: 30px;
+width: 120px;
+}
+
+.nav-bar{
+ background-color: pink;
+ height: 60px;
+
+}
+
+textarea{
+    height: 500px;
+    width: 900px;
+    justify-self: center;
+
+}
+.quote{
+    height: 50px;
+    width: 900px;
+}
+
+.post{
+  
+    display: flex;
+     justify-content: center;
+}
+
+.buton{
+    display: flex;
+
+}
+
+.posts{
+    margin: 3px;
+}
+
+.posts p{
+padding: 5px 5px;
+}
+
+input{
+   justify-content: center;
+}
+
+
+.toBeEdited{
+    display: flex;
+    justify-content: center;
+}
+body button{
+    justify-self: center;
+}
+.full-post h4,p{
+    justify-self: center;
+}
