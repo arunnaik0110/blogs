@@ -33,6 +33,9 @@ let posts=[{
 
 },
 ];
+app.get("/", (req, res) => {
+    res.redirect("/post");
+});
 
 app.get("/post",(req,res)=>{
 res.render("posts.ejs",{posts})
